@@ -3,3 +3,24 @@
     background: none !important;
     box-shadow: none !important;
 }
+
+.sm-text {
+    margin-top: 18px !important;
+    margin-left: 3px !important;
+}
+
+.sm-text.blue {
+    color: #42affa !important;
+}
+
+.sm-text.orange {
+    color: #dd4702 !important;
+}
+
+.html-definition {
+    margin: 0 !important;
+}
+
+.reveal pre {
+    box-shadow: none !important;
+}
