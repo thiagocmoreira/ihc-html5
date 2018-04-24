@@ -3,6 +3,9 @@
     background: none !important;
     box-shadow: none !important;
 }
+.img-html.engine {
+    margin: 15px;
+}
 
 .sm-text {
     margin-top: 18px !important;

@@ -39,7 +39,7 @@
 						<li>O que é HTML?</li>
 						<li>Novidades no HTML5</li>
 						<li>Semântica de Marcações</li>
-						<li>Frameworks</li>
+						<li><i>Template Engines</i></li>
 					</ul>
 				</section>
 				<section data-background="#42affa" data-background-transition="zoom" data-transition="convex">
@@ -208,6 +208,13 @@
 					<h2>Semântica de Marcações</h2>
 				</section>
 				<section data-transition="convex">
+					<ul>
+						<li>Versões anteriores do HTML não haviam <i>tags</i> com semântica</li>
+						<li>Usavam <i>div</i> para todas as situações, junto com <i>id</i> e <i>class</i></li>
+						<li>HTML5: <i>Tags</i> semânticas para indicar aos <i>user-agents</i> cada conteúdo da página</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
 					<h2>Metadados</h2>
 					<ul>
 						<li>Conjunto de informações à respeito da página</li>
@@ -282,6 +289,53 @@
 							</section>
 						</code>
 					</pre>
+				</section>
+				<section data-background="#42affa" data-background-transition="zoom" data-transition="convex">
+					<h2><i>Template Engines</i></h2>
+				</section>
+				<section data-background="#fff" data-background-transition="zoom" data-transition="fade">
+					<h2><i>Engines</i> mais populares</h2>
+					<img class="img-html engine" width="200" height="auto" data-src="./img/pug.png" alt="PUG">					
+					<img class="img-html engine" width="400" height="auto" data-src="./img/jade.png" alt="Jade">					
+					<img class="img-html engine" data-src="./img/haml.png" alt="Jade">					
+				</section>
+				<section data-transition="convex">
+					<h2>HTML convencional</h2>
+					<pre>
+						<code class="html" data-trim contenteditable>							
+							<h1 class="titulo-azul">
+							   Título
+							</h1>
+							<ul class="lista">
+							   <li class="elemento">
+							      <div class="divisao">
+							         <h2 class="subtitulo">
+							            <p class="paragrafo">
+							               Elemento da lista
+							            </p>
+							         </h2>
+					        </div>
+							   </li>
+							</ul>
+						</code>
+					</pre>
+				</section>
+				<section data-transition="convex">
+					<h2>PUG</h2>
+					<pre>
+						<code class="html" data-trim contenteditable>							
+							h1.titulo-azul Título
+							ul.lista
+							   li.elemento
+								  div.divisao
+									 h2.subtitulo
+										p.paragrafo Elemento da lista
+						</code>
+					</pre>
+				</section>
+				<section data-background="#dd4702" data-background-transition="zoom" data-transition="convex">
+					<h1>Obrigado!</h1>
+					<h4>Perguntas?</h4>
 				</section>
 			</div>
 		</div>
