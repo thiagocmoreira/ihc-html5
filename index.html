@@ -33,16 +33,16 @@
 						<small>Criado por <a href="http://github.com/thiagocmoreira">Thiago Moreira</a> </small>
 					</p>
 				</section>
-				<section data-background="#dd4702" data-background-transition="convex" data-transition="convex">
+				<section data-background="#dd4702" data-background-transition="zoom" data-transition="convex">
 					<h2>Agenda</h2>
 					<ul>
 						<li>O que é HTML?</li>
-						<li>Mudanças no HTML5</li>
-						<li>Semântica</li>
+						<li>Novidades no HTML5</li>
+						<li>Semântica de Marcações</li>
 						<li>Frameworks</li>
 					</ul>
 				</section>
-				<section data-background="#42affa" data-background-transition="convex" data-transition="convex">
+				<section data-background="#42affa" data-background-transition="zoom" data-transition="convex">
 					<h2>O que é HTML?</h2>
 				</section>
 				<section data-transition="convex">
@@ -59,7 +59,7 @@
 						<li>Junção entre os padrões HyTime e SGML</li>
 					</ul>
 				</section>
-				<section>
+				<section data-transition="convex">
 					<ul>
 						<li>Primeira versão feita em 1991 por Tim Berners-Lee</li>
 						<li>Criada para resolver um problema pessoal de Tim</li>
@@ -165,6 +165,123 @@
 							<li>BODY</li>								
 						</ul>
 					</ul>
+				</section>
+				<section data-background="#42affa" data-background-transition="zoom" data-transition="convex">
+					<h2>Novidades no HTML5</h2>
+				</section>
+				<section data-transition="convex">
+					<p>Faz o que antes só era possível com outras ferramentas e linguagens de programação</p>
+					<p>Tem suporte à áudio e vídeo de alto nível</p>
+				</section>
+				<section data-transition="convex">
+					<ul>
+						<li>Suporte a SVG, canvas e outros gráficos vetoriais</li>
+						<li>API interna para rodar scripts</li>
+						<li>Cache de aplicativos e não apenas do navegador</li>
+						<li>Vários elementos adicionados</li>						
+						<li>Elementos sem valor semântico descontinuados</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
+					<h2>Vantagens para <i>DEVS</i></h2>
+					<ul>
+						<li>Semântica melhorada para elementos</li>
+						<li>Desenvolvimento responsivo facilitado</li>
+						<li>O elemento <i>canvas</i></li>
+						<li>Adicionar atributos personalizados</li>						
+						<li>Elementos sem valor semântico descontinuados</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
+					<h2>Vantagens para o Usuário Final</h2>
+					<ul>
+						<li>Maior adaptação do <i>browser</i> com dispositivos móveis e <i>tablets</i></li>
+						<li>Erradicação do uso do <i>Adobe Flash</i></li>
+						<li>Suporte para vários tipos de arquivo multimidia</li>
+					</ul>
+				</section>
+				<section data-background="#fff" data-background-transition="zoom" data-transition="convex">
+					<h4>Várias ferramentas complementares</h4>
+					<img class="img-html" width="400" height="auto" data-src="./img/ferramentas.png" alt="Ferramentas">					
+				</section>
+				<section data-background="#42affa" data-background-transition="zoom" data-transition="convex">
+					<h2>Semântica de Marcações</h2>
+				</section>
+				<section data-transition="convex">
+					<h2>Metadados</h2>
+					<ul>
+						<li>Conjunto de informações à respeito da página</li>
+						<li>Invisível para aos usuários</li>
+						<li>Usada pelos <i>user-agents</i> em geral</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
+					<h2>Metadados</h2>
+					<pre>
+						<code class="html" data-trim contenteditable>							
+							<meta charset="utf-8">
+							<title>Página de IHC</title>
+							<meta name="keywords" content="ihc, unb, fga, computador">
+							<meta name="description" content="Aprenda sobre Interação Humano Computador">
+							<meta name="author" content="Thiago Moreira">
+							<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						</code>
+					</pre>
+				</section>
+				<section data-transition="convex">
+					<h2><i>Header</i></h2>
+					<ul>
+						<li>Define um cabeçalho de uma página</li>
+						<li>Pode conter logo, títulos, campo de busca, menu de navegação, etc</li>
+					</ul>
+					<h2><i>Footer</i></h2>
+					<ul>
+						<li>Define um rodapé da página</li>
+						<li>Pode conter copyright, blocos de navegação, links relacionados, informações sobre o domínio, etc</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
+					<h2><i>Section</i></h2>
+					<ul>
+						<li>Similar à uma <i>div</i></li>
+						<li>Ao contrário da div que divide qualquer conteúdo sem uma finalidade específica, a <i>section</i> divide diferentes seções do site</li>
+					</ul>
+				</section>
+				<section data-transition="convex">
+					<h2>Então, não faça isto</h2>
+					<pre>
+						<code class="html" data-trim contenteditable>							
+							<h1>Site sobre IHC</h1>
+							<div>
+							    <h1>Sessão 1 do site</h1>
+								<div>Artigo da IEEE</div>
+								<div>Este artigo é sencacional e foi criado pela IEEE na década de 90.</div>								
+							</div>
+							<div>
+							    <h1>Sessão 2 do site</h1>
+							    <div>The Scream por Edward Munch. Pintado em 1893.</div>
+							</div>
+						</code>
+					</pre>
+				</section>
+				<section data-transition="convex">
+					<h2>Mas sim isto</h2>
+					<pre>
+						<code class="html" data-trim contenteditable>							
+							<h1>Site sobre IHC</h1>
+							<section>
+								<h2>Sessão 1 do site</h2>
+								<article>
+									<h3>Artigo da IEEE</h3>
+									<p>Este artigo é sencacional e foi criado pela IEEE na década de 90.</p>
+								</article>								
+							</section>
+							<section>
+								<h2>Sessão 2 do site</h2>
+								<p><cite>The Scream</cite> por Edward Munch. Pintado in 1893.</p>
+							</section>
+						</code>
+					</pre>
 				</section>
 			</div>
 		</div>
